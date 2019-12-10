@@ -35,7 +35,6 @@ def compute(prg, instream=sys.stdin, outstream=sys.stdout, debug=False):
     relbase = 0
     while True:
         inst = program[pc]
-        # print("inst", inst, "pc", pc)
         inst_digits = [int(i) for i in str(program[pc])]
         if inst != 99:
             inst_code = inst_digits[-1]
